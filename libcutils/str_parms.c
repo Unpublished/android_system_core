@@ -100,7 +100,7 @@ static bool remove_pair(void *key, void *value, void *context)
     return true;
 
 do_remove:
-    hashmapRemove(ctxt->str_parms->map, key);
+    ALOGE("hashmapRemove returns %x", hashmapRemove(ctxt->str_parms->map, key);)
     free(key);
     free(value);
     return should_continue;
